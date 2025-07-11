@@ -1,9 +1,9 @@
-services:
+services:services:
   - type: web
-    name: market-breakout-bot
-    env: python
+    name: my-telegram-bot
+    runtime: python
     buildCommand: ""
-    startCommand: "python bot.py"
+    startCommand: python main.py
     envVars:
-      - key: BOT_TOKEN
-        sync: false
+      - key: TOKEN
+        value: tayoon07_bot
