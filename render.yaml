@@ -1,11 +1,9 @@
 services:
   - type: web
-    name: stock-movers-bot
+    name: market-breakout-bot
     env: python
-    plan: free
     buildCommand: ""
-    startCommand: python bot.py
-    autoDeploy: true
+    startCommand: "python bot.py"
     envVars:
       - key: BOT_TOKEN
         sync: false
