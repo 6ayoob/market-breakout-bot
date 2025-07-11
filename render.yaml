@@ -3,8 +3,9 @@ services:
     name: stock-movers-bot
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
+    buildCommand: ""
+    startCommand: python bot.py
+    autoDeploy: true
     envVars:
-      - key: 7863509137:AAEmoyimZV-XVHcA7aBT15e4IRoxB9WR0hY
-        value: tayoob07_BOT
+      - key: BOT_TOKEN
+        sync: false
