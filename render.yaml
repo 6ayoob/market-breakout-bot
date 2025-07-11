@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: market-breakout-bot
+    name: stock-movers-bot
     env: python
-    region: oregon
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
-    autoDeploy: true
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: 7863509137:AAEmoyimZV-XVHcA7aBT15e4IRoxB9WR0hY
+        value: tayoob07_BOT
